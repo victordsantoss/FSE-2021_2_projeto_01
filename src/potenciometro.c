@@ -49,7 +49,7 @@ void potenciometro_control(int uart_filesystem, struct bme280_dev bme_connection
     TE = get_current_temperature(&bme_connection);
     printf("\tUART TI: %.2f⁰C - TR: %.2f⁰C - TE: %.2f⁰C\n", TI, TR, TE);
     print_display("UART ", TI, TR, TE);
-    fprintf(file, "%d,%f,%f,%f", interaction_count, TI, TR, TE);
+    fprintf(file, "%d,%f,%f,%f\n", interaction_count, TI, TR, TE);
 
     interaction_count++;
 
