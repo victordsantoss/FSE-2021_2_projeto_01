@@ -2,7 +2,7 @@
 Trabalho 1 da disciplina de Fundamentos de Sistemas Embarcados (2021/2)
 
 ## Objetivo 
-Este trabalho tem por objetivo a implementação de um sistema (que simula) o controle de um forno para soldagem de placas de circuito impresso (PCBs). 
+Este trabalho tem por objetivo a implementação de um sistema (que simula) o controle de um forno para soldagem de placas de circuito impresso (PCBs).
 
 ## Links importantes
 Para acessar o repositório template para o trabalho apresentado, clique [aqui](https://gitlab.com/fse_fga/trabalhos-2021_2/trabalho-1-2021-2).
@@ -10,11 +10,12 @@ Para acessar o repositório template para o trabalho apresentado, clique [aqui](
 ## Observações
 ### Tipos de controle:
 * Terminal
+    - Nessa opção o usuário irá definir a Temperatura Referencial (TR), além de, definir os valores de Controle Proporcional (Kp), Controle Integral (Ki) e o Controle Derivativo (Kd), caso queira. Caso essas opções não sejam passadas, o programa definirá valores padrões, 
+    sendo eles: Kp: 20, Ki: 0.1 e Kd: 100.
 * Potenciomêtro
+    - Nessa opção o usuário irá coletar informações diretas da placa.
 
-## Funcionamento (Gráficos dos logs)
-### Terminal
-
+## Gráficos 
 ### Potenciômetro
 Gráfico gerado seguindo os seguintes valores: 
 * Temperatura ReferenciaL (TR): Obtida por meio do potenciômetro. 
