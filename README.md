@@ -8,8 +8,14 @@ Este trabalho tem por objetivo a implementação de um sistema (que simula) o co
 Para acessar o repositório template para o trabalho apresentado, clique [aqui](https://gitlab.com/fse_fga/trabalhos-2021_2/trabalho-1-2021-2).
 
 ## Observações
+### Tipos de controle:
+* Terminal
+* Potenciomêtro
 
-## Funcionamento
+## Funcionamento (Gráficos dos logs)
+### Terminal
+
+### Potenciômetro
 
 ## Como executar?
 > Clone este repositório:
