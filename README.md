@@ -16,6 +16,12 @@ Para acessar o repositório template para o trabalho apresentado, clique [aqui](
 ### Terminal
 
 ### Potenciômetro
+Gráfico gerado seguindo os seguintes valores: 
+* Temperatura ReferenciaL (TR): Obtida por meio do potenciômetro. 
+* Temperatura Externa (TE): Obtida por meio do sensor bme280(I2C).
+* Temperatura Interna (TI): Obtida por meio do sensor ds18b20(1-WIRE).
+
+<img src="./images/potenciometro.png" width="450px" alt="potenciometro">
 
 ## Como executar?
 > Clone este repositório:
