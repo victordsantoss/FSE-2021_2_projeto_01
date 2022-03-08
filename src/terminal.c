@@ -37,7 +37,7 @@ void terminal_control(int uart_filesystem, struct bme280_dev bme_connection)
     printf("INSIRA O VALOR DE TR: \n");
     scanf("%f", &TR);
 
-    printf("VALORES KP, KI, KD: \n\t1) INSERIR\n\t2) VALORES PADRÕES\n");
+    printf("VALORES KP, KI, KD: \n\t1) INSERIR\n\t2) VALORES PADRÕES (20.0, 0.1, 100.0)\n");
     scanf("%d", &opt);
 
     switch (opt)
@@ -71,12 +71,11 @@ void terminal_control(int uart_filesystem, struct bme280_dev bme_connection)
 
         pwm_control(value);
 
-        writeUartGet(uart_filesystem, GET_POTENTIOMETER);
         pid_update_reference(TR);
 
         TE = get_current_temperature(&bme_connection);
-        printf("\tUART TI: %.2f⁰C - TR: %.2f⁰C - TE: %.2f⁰C\n", TI, TR, TE);
-        print_display("UART ", TI, TR, TE);
+        printf("\tTERMINAL TI: %.2f⁰C - TR: %.2f⁰C - TE: %.2f⁰C\n", TI, TR, TE);
+        print_display("TERMINAL ", TI, TR, TE);
         fprintf(file, "%d,%f,%f,%f\n", interaction_count, TI, TR, TE);
 
         interaction_count++;

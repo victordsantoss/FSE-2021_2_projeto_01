@@ -15,6 +15,7 @@
 #include "thermometer.h"
 #include "uart.h"
 #include "terminal.h"
+#include "curva_reflow.h"
 
 struct bme280_dev bme_connection;
 int uart_filesystem;
@@ -44,7 +45,7 @@ void initMenu()
 {
   int control;
 
-  printf("TIPO DE CONTROLE: \n\t1) TERMINAL\n\t2) POTENCIOMETRO\n\t3) ARQUIVO DE CURVA\n");
+  printf("TIPO DE CONTROLE: \n\t1) TERMINAL\n\t2) POTENCIOMETRO\n\t3) CURVA REFLOW\n");
   scanf("%d", &control);
 
   switch (control)
@@ -59,6 +60,8 @@ void initMenu()
     break;
   case 3:
     system("clear");
+    curva_reflow_control(uart_filesystem, bme_connection);
+    break;
   default:
     system("clear");
     printf("Opção invalida\n");
