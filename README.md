@@ -14,6 +14,8 @@ Para acessar o repositório template para o trabalho apresentado, clique [aqui](
     sendo eles: Kp: 20, Ki: 0.1 e Kd: 100.
 * Potenciomêtro
     - Nessa opção o usuário irá coletar informações diretas da placa.
+* Potenciomêtro
+    - Incompleto. Está lendo os valores do .csv mas não fazendo as requisições pelo tempo requisitado.
 
 ## Gráficos 
 ### Potenciômetro
